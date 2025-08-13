@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button"
 
 export const Navbar = () => {
-    const navContent = ['Products' , 'Docs' , 'About' , 'Blogs'];
+    const navContent = ['Github' , 'Docs' ,, 'Blogs', 'About'];
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-        setIsScrolled(window.scrollY > 50); // shrink after 50px scroll
+        setIsScrolled(window.scrollY > 50);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);

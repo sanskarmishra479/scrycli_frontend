@@ -18,12 +18,12 @@ export const BgAnimation = () => {
                 }
 
                 @keyframes animeTwo {
-                    0% { transform: translate(10%, -10%); }
-                    100% { transform: translate(-10%, 10%); }
+                    0% { transform: translate(10%, -13%); }
+                    100% { transform: translate(-10%, 15%); }
                 }
 
                 @keyframes animeThree {
-                    0% { transform: translate(-5%, 5%); }
+                    0% { transform: translate(-5%, 10%); }
                     100% { transform: translate(5%, -5%); }
                 }
             `}

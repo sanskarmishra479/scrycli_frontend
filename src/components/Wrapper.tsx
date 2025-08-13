@@ -1,3 +1,5 @@
+import { About } from "./About"
+import { Footer } from "./Footer"
 import { Heading } from "./Heading"
 import { Hero } from "./Hero"
 import { MailBox } from "./Mailbox"
@@ -6,12 +8,14 @@ import { Version } from "./Version"
 
 export const Wrapper = () =>{
     return(
-        <div className="h-full w-320 z-50">
+        <div className="h-full w-250 z-50">
             <Navbar />
             <Version />
             <Heading />
             <MailBox />
             <Hero />
+            {/* <About /> */}
+            <Footer />
         </div>
     )
 }
