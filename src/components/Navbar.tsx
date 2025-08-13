@@ -14,15 +14,15 @@ export const Navbar = () => {
     }, []);
     return(
         <div className={`fixed flex p-5 items-center justify-self-center transition-all duration-100 ease-in-out
-            ${isScrolled ? "bg-white/70 mt-5 backdrop-blur-md py-2 shadow-md w-250 h-15 rounded-2xl border-1 border-gray-200 z-50"
-            : "w-320 h-15 bg-white"}`}>
+            ${isScrolled ? "bg-bg/70 mt-5 backdrop-blur-md py-2 shadow-md w-250 h-15 rounded-2xl border-1 border-gray-200 z-50"
+            : "w-320 h-15 bg-bg"}`}>
             <div className="w-1/3 flex items-center gap">
                 {isScrolled ?
                     <a href="/" className="h-10 w-10 rounded-2xl flex items-center">
                         <img className="rounded-sm" src="/logo1.png" alt="logo" />
                     </a> :
                     <a href="/" className="h-10 w-10 rounded-2xl flex items-center">
-                        <img className="rounded-sm" src="/logo3.png" alt="logo" />
+                        <img className="rounded-sm" src="/logo1.png" alt="logo" />
                         <h1 className="font-[Poppins] font-semibold tracking-tighter text-xl">scrycli</h1>
                     </a>
                     }
