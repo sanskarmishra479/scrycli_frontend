@@ -15,7 +15,7 @@ export const Footer = () => {
 							<a href="#" aria-label="X" target="_blank" className="hover:text-gray-900">
 								<svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M18.244 3H21l-6.55 7.48L22 21h-5.98l-4.67-5.66L5.9 21H3.14l7.01-8.02L2 3h6.08l4.22 5.11L18.244 3Zm-2.1 16.28h2.19L7.94 4.64H5.6l10.544 14.64Z"/></svg>
 							</a>
-							<a href="#" aria-label="Instagram" target="_blank" className="hover:text-gray-900">
+							<a href="https://www.instagram.com/sanskar_mishra__/" aria-label="Instagram" target="_blank" className="hover:text-gray-900">
 								<svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.75-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg>
 							</a>
 							<a href="https://www.linkedin.com/in/sanskar1/" target="_blank" aria-label="LinkedIn" className="hover:text-gray-900">

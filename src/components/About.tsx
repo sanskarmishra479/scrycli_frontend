@@ -8,10 +8,8 @@ export const About = () => {
                         hunts down bugs, cleans up spaghetti, and calls out the garbage before it hits production.
                         Unlike chatbots, we live where real devs 
                         work — the CLI. No tabs. No fluff. Just raw power in your terminal.</p>
-
                 </div>
                 <div className="h-full w-2/3">
-
                 </div>
             </div>
             <div className="h-1/2 w-full p-2">
