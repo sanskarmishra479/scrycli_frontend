@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button"
 
 export const Navbar = () => {
-    const navContent = ['Github' , 'Docs' ,, 'Blogs', 'About'];
+    const navContent = ['Github' , 'Docs' , 'Blogs', 'About'];
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {

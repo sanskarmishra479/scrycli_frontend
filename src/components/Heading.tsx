@@ -7,10 +7,10 @@ export const Heading = () =>{
                 </h1>
                 <div className="w-95 mt-6 tracking-tight flex items-center justify-center ml-[70px]">
                     <p className="text-[#6c6c6b] font-[Poppins]">
-                    Bugs? Spaghetti code? Lazy mistakes?
-                     I see it all. I’m SCRYCLI, 
-                     and I’m here to mop up your mess.
-                </p>
+                        Bugs? Spaghetti code? Lazy mistakes?
+                        I see it all. I’m SCRYCLI, 
+                        and I’m here to mop up your mess.
+                    </p>
                 </div>
             </div>
         </div>
