@@ -1,10 +1,10 @@
 import type { ButtonTypes } from "../types/ButtonTypes"
-
+import { motion } from "motion/react";
 export const Button = (props:ButtonTypes) => {
 
     const variantStyle = {
-        "primary": "bg-black text-[#f6f5f3] font-[Inter] font-semibold rounded-xl cursor-pointer border-1 border-black",
-        "secondary":"text-black font-[Inter] font-semibold rounded-xl cursor-pointer border-1 border-gray-400 hover:border-black",
+        "primary": "bg-black text-[#f6f5f3] font-[Inter] font-semibold rounded-xl cursor-pointer border-1 border-black opacity-100",
+        "secondary":"text-black font-[Inter] font-semibold rounded-xl cursor-pointer border-1 border-gray-400 hover:border-black opacity-100",
     }
 
     const sizeStyle = {
@@ -15,9 +15,9 @@ export const Button = (props:ButtonTypes) => {
     }
 
     return(
-        <button className={`${variantStyle[props.variant]}  ${sizeStyle[props.size]}`} onClick={props.onclick}>
+        <motion.button whileHover={{scale: 1.05}} whileTap={{scale: 0.95}} className={`${variantStyle[props.variant]}  ${sizeStyle[props.size]}`} onClick={props.onclick}>
             {props.Icon}
             {props.text}
-        </button>
+        </motion.button>
     )
 }

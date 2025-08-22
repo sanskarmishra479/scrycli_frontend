@@ -1,6 +1,16 @@
+import { motion } from "motion/react"
+
 export const Footer = () => {
 	return (
-		<footer className="w-full mt-10 mb-10">
+		<motion.div 
+		initial={{ opacity: 0, scale: 0.5 }}
+		animate={{ opacity: 1, scale: 1 }}
+		transition={{
+			duration: 0.3,
+			delay: 0.1,
+			ease: "easeInOut",
+		}}
+		className="w-full md:w-250 mt-10 mb-10 flex-col items-center justify-self-center overflow-hidden ">
 			<div className="mx-auto w-full max-w-7xl rounded-3xl border border-gray-200 bg-white p-8 md:p-12">
 				<div className="grid grid-cols-1 gap-10 md:grid-cols-4">
 					<div className="space-y-4">
@@ -26,9 +36,9 @@ export const Footer = () => {
 							</a>
 						</div>
 					</div>
-					<div className="w-160 flex items-center justify-center">
-                        <div className="flex-col items-center justify-center">
-                            <h1 className="text-center text-4xl font-medium font-[Poppins]">"Don’t take yourself so seriously. You’re just a monkey with a plan."</h1>
+					<div className="w-full md:w-160 flex items-center justify-center">
+                        <div className="flex-col items-center justify-center w-[100%]">
+                            <h1 className="text-center text-2xl md:text-4xl font-medium font-[Poppins]">"Don’t take yourself so seriously. You’re just a monkey with a plan."</h1>
                             <p className="text-center text-sm font-light font-[Poppins] mt-2">~ Naval Ravikant</p> 
                         </div>
 					</div>
@@ -44,6 +54,6 @@ export const Footer = () => {
 					</nav>
 				</div>
 			</div>
-		</footer>
+		</motion.div>
 	);
 }

@@ -1,18 +1,28 @@
+import { motion } from "motion/react"
+
 export const Heading = () =>{
     return(
-        <div className="mt-14 h-50 w-full flex items-center justify-center">
-            <div className="h-full w-140 flex-col items-center justify-center ml-20 ">
-                <h1 className="text-6xl/15 font-[Poppins] tracking-tighter">
+        <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+            duration: 0.3,
+            delay: 0.1,
+            ease: "easeInOut",
+        }}
+         className="h-auto w-full flex flex-col items-center justify-center mt-10">
+            <div className="w-full md:w-140">
+                <h1 className="text-center text-6xl/15 font-[Poppins] tracking-tighter">
                     Your code is trash. I’m here to clean it.
                 </h1>
-                <div className="w-95 mt-6 tracking-tight flex items-center justify-center ml-[70px]">
-                    <p className="text-[#6c6c6b] font-[Poppins]">
-                        Bugs? Spaghetti code? Lazy mistakes?
-                        I see it all. I’m SCRYCLI, 
-                        and I’m here to mop up your mess.
-                    </p>
-                </div>
             </div>
-        </div>
+            <div className="w-[60%] md:w-95 text-center mt-4 text-[14px] md:text-[15px] md:text-[#6c6c6b] font-[Poppins] tracking-tight">
+                <p className="text-[#6c6c6b] font-[Poppins]">
+                    Bugs? Spaghetti code? Lazy mistakes?
+                    I see it all. I’m SCRYCLI, 
+                    and I’m here to mop up your mess.
+                </p>
+            </div>
+        </motion.div>
     )
 }
