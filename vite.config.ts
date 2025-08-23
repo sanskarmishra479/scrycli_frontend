@@ -8,9 +8,11 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  root: '.',
   build: {
     outDir: 'dist',
     rollupOptions: {
+      input: './index.html',
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
