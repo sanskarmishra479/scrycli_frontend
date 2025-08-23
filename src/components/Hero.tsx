@@ -14,13 +14,9 @@ export const Hero = () => {
 
     return (
         <motion.div 
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-            duration: 0.3,
-            delay: 0.1,
-            ease: "easeInOut",
-        }}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         className="w-full flex items-center justify-center mt-5 md:mt-10 overflow-hidden ">
             <motion.div
             animate={{
@@ -38,7 +34,14 @@ export const Hero = () => {
                 isScrolled ? "w-250" :
                 "w-220"
             } `}>
-                <video className="rounded-lg" src="/cursorful-video-1754691702755.mp4" autoPlay></video>
+                <video
+                    className="rounded-lg"
+                    src="/cursorful-video-1754691702755.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                ></video>
             </motion.div>
         </motion.div>
     )
