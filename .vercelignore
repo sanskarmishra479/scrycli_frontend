@@ -1,8 +1,8 @@
 # Dependencies
+# Dependencies
 node_modules/
 
 # Development files
-src/
 *.md
 *.txt
 .git/
@@ -10,8 +10,6 @@ src/
 
 # Config files
 eslint.config.js
-tsconfig*.json
-vite.config.ts
 
 # IDE files
 .vscode/
