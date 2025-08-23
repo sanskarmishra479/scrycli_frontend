@@ -3,7 +3,7 @@
   "name": "scrycli_frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
