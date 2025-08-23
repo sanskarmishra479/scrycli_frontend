@@ -46,7 +46,7 @@ export const Navbar = () => {
             
             <div className="hidden md:flex items-center justify-evenly md:w-1/3">
                 {navContent.map((item, index) => (
-                    <Link key={index} to={`/${item}`} className="hover:font-semibold cursor-pointer px-4 py-2 text-sm font-[Inter] font-medium rounded-xl">
+                    <Link key={index} to={`/${item.toLowerCase()}`} className="hover:font-semibold cursor-pointer px-4 py-2 text-sm font-[Inter] font-medium rounded-xl">
                         {item}
                     </Link>
                 ))}
@@ -78,7 +78,7 @@ export const Navbar = () => {
                 <div className="absolute top-14 right-0 bg-bg/70 backdrop-blur-sm rounded-lg h-auto w-full p-3 border-1 border-slate-500/20">
                     {navContent.map((item, index) => (
                         <div key={index} className="text-xl font-[Poppins] tracking-tighter">
-                            <a href={`/${item.toLowerCase()}`} className="cursor-pointer">{item}</a>
+                            <Link to={`/${item.toLowerCase()}`} className="cursor-pointer">{item}</Link>
                         </div>
                     ))}
                     <div className="flex items-center gap-2 mt-2">
