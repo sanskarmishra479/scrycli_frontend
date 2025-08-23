@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Development files
+src/
+*.md
+*.txt
+.git/
+.gitignore
+
+# Config files
+eslint.config.js
+tsconfig*.json
+vite.config.ts
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage
+coverage/
+
+# Build artifacts (these will be built on Vercel)
+dist/

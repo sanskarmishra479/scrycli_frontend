@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { BgAnimation } from "./components/BgAnimation"
+// import { BgAnimation } from "./components/BgAnimation"
 import { Wrapper } from "./components/Wrapper"
 import { Signup } from "./components/Signup"
 import { Token } from "./components/Token"
