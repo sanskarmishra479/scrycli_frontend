@@ -9,7 +9,7 @@ export default defineConfig({
     react()
   ],
   build: {
-    minify: 'terser',
+    outDir: 'dist',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -18,8 +18,7 @@ export default defineConfig({
           motion: ['motion']
         }
       }
-    },
-    chunkSizeWarningLimit: 1000
+    }
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'firebase/auth', 'motion']
