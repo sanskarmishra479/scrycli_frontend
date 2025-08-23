@@ -4,6 +4,9 @@ import { Wrapper } from "./components/Wrapper"
 import { Signup } from "./components/Signup"
 import { Token } from "./components/Token"
 import { auth } from "./firebase/config"
+import { Docs } from "./components/Docs"
+import { Blog } from "./components/Blog"
+import { About } from "./components/About"
 
 
 function App() {
@@ -14,7 +17,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Wrapper />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/token" element={<Token />} />
+          {auth.currentUser?.emailVerified ? <Route path="/token" element={<Token />} /> : <Route path="/token" element={<Signup />} />}
+          <Route path="/Blogs" element={<Blog />} />
+          <Route path="/Docs" element={<Docs />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
