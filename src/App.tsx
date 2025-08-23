@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Wrapper />} />
           <Route path="/signup" element={<Signup />} />
-          {auth.currentUser?.emailVerified ? <Route path="/token" element={<Token />} /> : <Route path="/token" element={<Signup />} />}
+          <Route path="/token" element={<Token />} />
         </Routes>
       </BrowserRouter>
     </div>

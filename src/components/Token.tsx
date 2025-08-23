@@ -2,8 +2,9 @@ import { Copy } from "../icons/Copy"
 import { useState, useEffect } from "react"
 import { motion } from "motion/react"
 import { Check } from "../icons/Check"
-import { auth } from '../firebase/config'
+import { auth } from '../firebase/config' 
 import { onAuthStateChanged, type User } from 'firebase/auth'
+import { Signup } from "./Signup"
 
 export const Token = () => {
     const [token, setToken] = useState('Loading...')
@@ -70,6 +71,8 @@ export const Token = () => {
     }
 
     return (
+        <>
+        {auth.currentUser?.emailVerified ?         
         <div className="flex items-center justify-center w-screen h-screen font-[Poppins]">
             <div className="md:h-110 md:w-110 h-full w-full rounded-3xl p-8 flex flex-col items-center justify-center gap-4">
                 <h1 className="text-2xl font-semibold mb-4">Token</h1>
@@ -87,6 +90,8 @@ export const Token = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> :
+        <Signup />}
+        </>
     )
 }
