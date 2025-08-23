@@ -78,7 +78,7 @@ export const Navbar = () => {
                 <div className="absolute top-14 right-0 bg-bg/70 backdrop-blur-sm rounded-lg h-auto w-full p-3 border-1 border-slate-500/20">
                     {navContent.map((item, index) => (
                         <div key={index} className="text-xl font-[Poppins] tracking-tighter">
-                            <a href={`/${item}`} className="cursor-pointer">{item}</a>
+                            <a href={`/${item.toLowerCase()}`} className="cursor-pointer">{item}</a>
                         </div>
                     ))}
                     <div className="flex items-center gap-2 mt-2">

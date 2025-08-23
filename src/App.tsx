@@ -18,9 +18,9 @@ function App() {
           <Route path="/" element={<Wrapper />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/token" element={<Token />} />
-          <Route path="/Blogs" element={<Blog />} />
-          <Route path="/Docs" element={<Docs />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
