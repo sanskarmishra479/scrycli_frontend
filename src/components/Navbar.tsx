@@ -82,8 +82,7 @@ export const Navbar = () => {
                         </div>
                     ))}
                     <div className="flex items-center gap-2 mt-2">
-                        <Button variant="secondary" size="sm" text="Login"/>
-                        <Button variant="primary" size="sm" text="Signup"/>
+                        <Button variant="primary" size="sm" text="Signup" onclick={() => navigate("/signup")} />
                     </div>
                 </div>
             )}
