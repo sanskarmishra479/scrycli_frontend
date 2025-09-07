@@ -1,7 +1,7 @@
 export const Docs = () => {
     return(
-        <>
-        <h1>hii</h1>
-        </>
+        <div>
+            <h1>Docs</h1>
+        </div>
     )
 }
