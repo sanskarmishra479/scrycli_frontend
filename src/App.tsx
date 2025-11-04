@@ -6,6 +6,8 @@ import { Token } from "./components/Token"
 import { Docs } from "./components/Docs"
 import { Blog } from "./components/Blog"
 import { About } from "./components/About"
+import { Analytics } from "@vercel/analytics/react";
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
           <Route path="/docs" element={<Docs />} />
           <Route path="/about" element={<About />} />
         </Routes>
+        <Analytics />
       </BrowserRouter>
     </div>
   )
