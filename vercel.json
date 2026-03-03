@@ -5,15 +5,9 @@
   "functions": {
     "api/**/*.ts": { "runtime": "@vercel/node@5.3.13" }
   },
-  "redirects": [
-    {
-      "source": "/docs",
-      "destination": "https://www.scrycli.tech/docs",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/docs", "destination": "https://scrycli.mintlify.dev/docs" },
     { "source": "/assets/:path*", "destination": "/assets/:path*" },
     { "source": "/logo1.png", "destination": "/logo1.png" },
     { "source": "/favicon.ico", "destination": "/favicon.ico" },
