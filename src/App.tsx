@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Wrapper } from "./components/Wrapper"
 import { Signup } from "./components/Signup"
 import { Token } from "./components/Token"
-import { Docs } from "./components/Docs"
 import { Blog } from "./components/Blog"
 import { About } from "./components/About"
 import { Analytics } from "@vercel/analytics/react";
@@ -20,7 +19,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/token" element={<Token />} />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/docs" element={<Docs />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Analytics />
