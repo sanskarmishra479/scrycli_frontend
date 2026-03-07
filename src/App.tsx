@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 // import { BgAnimation } from "./components/BgAnimation"
 import { Wrapper } from "./components/Wrapper"
 import { Signup } from "./components/Signup"
@@ -20,6 +20,7 @@ function App() {
           <Route path="/token" element={<Token />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/docs" element={<Navigate to="/docs/introduction" replace />} />
         </Routes>
         <Analytics />
       </BrowserRouter>
